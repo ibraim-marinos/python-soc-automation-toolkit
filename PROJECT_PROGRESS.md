@@ -9,17 +9,18 @@
 - [x] Dependencies installed
 - [x] .gitignore created
 - [x] .env.example created
-- [ ] README completed
-- [ ] Git repository initialized
-- [ ] First commit created
-- [ ] GitHub repository published
+- [x] README completed
+- [x] Git repository initialized
+- [x] First commit created
+- [x] GitHub repository published
 
 ---
 
 ### Upcoming Development
 
-#### Day 2
-- IP Reputation Checker (AbuseIPDB)
+## Day 2 - IP Reputation Checker
+
+- [x] Completed
 
 #### Day 3
 - VirusTotal Integration
