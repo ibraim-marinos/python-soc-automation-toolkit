@@ -13,24 +13,32 @@ The objective of this project is to demonstrate practical cybersecurity automati
 The toolkit is structured as a modular collection of Python utilities that automate repetitive security operations workflows.
 
 Rather than creating isolated scripts, each module is designed to be reusable, documented, and easy to extend.
+
+## ✅ Completed Features
+
+### ✅ IP Reputation Checker
+  - Reads IP addresses from user input.
+  - Queries the AbuseIPDB API.
+  - Validates IPv4 and IPv6 addresses.
+  - Generates a SOC-style verdict.
+  - Saves reports to the `output` folder.
+  - Handles API and network errors gracefully.
+
+---
+
 # Planned Features
 
-## IP Reputation Checker
+## IP Reputation Checker Enhancements
 
-Checks IP addresses against multiple Threat Intelligence platforms.
+Planned integrations:
 
-Current integrations:
-
-- AbuseIPDB
 - VirusTotal
 
-Capabilities:
+Planned enhancements:
 
-- Reputation lookup
-- Abuse confidence score
-- Malicious detection ratio
-- JSON output
-- Console summary
+- Multi-source reputation lookup
+- Reputation correlation
+- Detection ratio comparison
 
 ---
 
@@ -52,7 +60,7 @@ Features include:
 
 Enriches security alerts using multiple intelligence sources.
 
-Future capabilities include:
+Planned capabilities:
 
 - IOC enrichment
 - Threat context collection
@@ -104,7 +112,7 @@ python-soc-automation-toolkit/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/python-soc-automation-toolkit.git
+git clone https://github.com/ibraim-marinos/python-soc-automation-toolkit.git
 ```
 
 Navigate into the project:
@@ -158,10 +166,11 @@ Completed:
 - Python environment
 - Dependency management
 - Documentation foundation
+- IP Reputation Checker
 
 Upcoming:
 
-- Threat Intelligence integration
+- VirusTotal integration
 - Windows Event Log parser
 - Alert enrichment
 - CLI interface
