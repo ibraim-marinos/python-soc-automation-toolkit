@@ -3,6 +3,7 @@
 ## Project Progress
 
 ### Day 1
+- [x] Completed
 - [x] Project structure created
 - [x] Virtual environment configured
 - [x] VS Code configured
@@ -22,8 +23,16 @@
 
 - [x] Completed
 
-#### Day 3
-- VirusTotal Integration
+### Day 3
+
+- [x] Completed
+- [x] VirusTotal Integration
+- [x] AbuseIPDB + VirusTotal correlation
+- [x] Combined SOC Verdict
+- [x] TXT report export
+- [x] JSON report export
+- [x] CSV report export
+
 
 #### Day 4
 - Windows Failed Login Parser

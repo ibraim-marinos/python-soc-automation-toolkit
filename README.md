@@ -24,15 +24,18 @@ Rather than creating isolated scripts, each module is designed to be reusable, d
   - Saves reports to the `output` folder.
   - Handles API and network errors gracefully.
 
+### ✅ VirusTotal Integration
+
+- Queries the VirusTotal API.
+- Retrieves malicious, suspicious, harmless, and reputation scores.
+- Correlates results with AbuseIPDB.
+- Generates a combined SOC verdict.
+- Exports reports to TXT, JSON, and CSV formats.
 ---
 
 # Planned Features
 
-## IP Reputation Checker Enhancements
-
-Planned integrations:
-
-- VirusTotal
+## Upcoming Enhancements
 
 Planned enhancements:
 
