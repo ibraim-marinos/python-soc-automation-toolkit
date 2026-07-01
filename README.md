@@ -38,9 +38,13 @@ Rather than creating isolated scripts, each module is designed to be reusable, d
 - Detects failed login events (Event ID 4625).
 - Extracts username, source IP, failure reason, computer name, and timestamp.
 - Counts failed login attempts by user.
-- Identifies possible brute force attacks using configurable thresholds.
+- Detects possible brute force attacks using configurable thresholds.
+- Implements dynamic severity classification (LOW, MEDIUM, HIGH, CRITICAL).
+- Calculates confidence levels based on detection thresholds.
 - Maps detections to MITRE ATT&CK T1110 (Brute Force).
-- Generates professional TXT investigation reports.
+- Generates professional SOC-style TXT investigation reports.
+- Uses reusable helper functions for cleaner and maintainable code.
+
 ---
 
 # Planned Features

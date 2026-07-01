@@ -51,8 +51,17 @@
 - [x] MITRE ATT&CK T1110 mapping
 - [x] TXT report export
 
-#### Day 5
-- Brute Force Detection Logic
+### Day 5
+
+- [x] Completed
+- [x] Dynamic severity classification
+- [x] Configurable brute force thresholds
+- [x] Confidence scoring
+- [x] Reusable helper functions
+- [x] Removed magic numbers
+- [x] Professional SOC-style TXT reporting
+- [x] Threshold validation (MEDIUM / HIGH / CRITICAL)
+- [x] Improved code maintainability
 
 #### Day 6
 - Alert Enrichment Module

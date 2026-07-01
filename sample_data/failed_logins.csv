@@ -8,3 +8,17 @@ EventID,TimeCreated,TargetUserName,IpAddress,FailureReason,Computer
 4625,2026-07-01 08:22:18,Administrator,192.168.1.10,Bad password,DC01
 4625,2026-07-01 08:22:45,Administrator,192.168.1.10,Bad password,DC01
 4625,2026-07-01 08:23:10,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:23:40,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:24:05,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:24:30,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:24:55,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:25:20,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:25:45,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:26:10,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:26:35,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:27:00,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:27:25,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:27:50,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:28:15,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:28:40,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:29:05,Administrator,192.168.1.10,Bad password,DC01

@@ -2,6 +2,9 @@ import pandas as pd
 import os
 from datetime import datetime
 
+BRUTE_FORCE_THRESHOLD = 5
+HIGH_SEVERITY_THRESHOLD = 10
+CRITICAL_SEVERITY_THRESHOLD = 20
 
 def save_report(report_content):
     """
@@ -16,6 +19,32 @@ def save_report(report_content):
         report.write(report_content)
 
     print(f"\nReport saved to: {report_path}")
+
+def get_severity(count):
+    """
+    Determine alert severity based on failed login count.
+    """
+
+    if count >= CRITICAL_SEVERITY_THRESHOLD:
+        return "CRITICAL"
+    elif count >= HIGH_SEVERITY_THRESHOLD:
+        return "HIGH"
+    elif count >= BRUTE_FORCE_THRESHOLD:
+        return "MEDIUM"
+    else:
+        return "LOW"
+
+def get_confidence(count):
+    """
+    Determine detection confidence based on failed login count.
+    """
+
+    if count >= HIGH_SEVERITY_THRESHOLD:
+        return "HIGH"
+    elif count >= BRUTE_FORCE_THRESHOLD:
+        return "MEDIUM"
+    else:
+        return "LOW"
 
 def main():
     """
@@ -102,16 +131,19 @@ def main():
 
     print("=========================================\n")
 
-    brute_force_threshold = 5
+    
 
     print("========== BRUTE FORCE DETECTION ==========")
 
     for user, count in user_counts.items():
-        if count >= brute_force_threshold:    
+        if count >= BRUTE_FORCE_THRESHOLD:   
+            severity = get_severity(count)
+            confidence = get_confidence(count)
+
             print(f"User           : {user}")
             print(f"Failed Logins  : {count}")
-            print("Severity       : HIGH")
-            print("Confidence     : HIGH")
+            print(f"Severity       : {severity}")
+            print(f"Confidence     : {confidence}")
             print("MITRE ATT&CK   : T1110 - Brute Force")
             print("Verdict        : Possible Brute Force Attack")
             print("------------------------------------------")
@@ -123,15 +155,16 @@ def main():
                 "========== BRUTE FORCE DETECTION ==========\n"
                 f"User           : {user}\n"
                 f"Failed Logins  : {count}\n"
-                "Severity       : HIGH\n"
-                "Confidence     : HIGH\n"
+                f"Severity       : {severity}\n"
+                f"Confidence     : {confidence}\n"
                 "MITRE ATT&CK   : T1110 - Brute Force\n"
                 "Verdict        : Possible Brute Force Attack\n"
                   "------------------------------------------\n"
                   "===========================================\n\n"
             )
             
-    save_report(report_content)   
+    save_report(report_content) 
+
 
 if __name__ == "__main__":
     main()
