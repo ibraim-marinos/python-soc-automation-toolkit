@@ -1,0 +1,10 @@
+EventID,TimeCreated,TargetUserName,IpAddress,FailureReason,Computer
+4625,2026-07-01 08:15:21,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:15:45,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:16:10,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:17:01,john,10.0.0.25,Unknown username,WS01
+4625,2026-07-01 08:17:40,guest,172.16.0.15,Bad password,WS02
+4624,2026-07-01 08:20:00,john,10.0.0.25,Successful login,WS01
+4625,2026-07-01 08:22:18,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:22:45,Administrator,192.168.1.10,Bad password,DC01
+4625,2026-07-01 08:23:10,Administrator,192.168.1.10,Bad password,DC01

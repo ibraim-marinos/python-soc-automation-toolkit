@@ -31,6 +31,16 @@ Rather than creating isolated scripts, each module is designed to be reusable, d
 - Correlates results with AbuseIPDB.
 - Generates a combined SOC verdict.
 - Exports reports to TXT, JSON, and CSV formats.
+
+### ✅ Windows Failed Login Parser
+
+- Reads Windows Security Event Log data from CSV.
+- Detects failed login events (Event ID 4625).
+- Extracts username, source IP, failure reason, computer name, and timestamp.
+- Counts failed login attempts by user.
+- Identifies possible brute force attacks using configurable thresholds.
+- Maps detections to MITRE ATT&CK T1110 (Brute Force).
+- Generates professional TXT investigation reports.
 ---
 
 # Planned Features
@@ -45,19 +55,6 @@ Planned enhancements:
 
 ---
 
-## Windows Failed Login Parser
-
-Parses Windows Security Event Logs to identify failed authentication attempts.
-
-Features include:
-
-- Event ID 4625 detection
-- Username extraction
-- Source IP extraction
-- Failed login counting
-- Brute force identification
-
----
 
 ## Alert Enrichment Module
 
@@ -79,6 +76,10 @@ python-soc-automation-toolkit/
 
 ├── docs/
 ├── output/
+│   ├── failed_login_report.txt
+│   ├── ip_report.csv
+│   ├── ip_report.json
+│   └── ip_report.txt
 ├── reports/
 ├── sample_data/
 ├── screenshots/
@@ -170,14 +171,15 @@ Completed:
 - Dependency management
 - Documentation foundation
 - IP Reputation Checker
+- VirusTotal Integration
+- Windows Failed Login Parser
 
 Upcoming:
 
-- VirusTotal integration
-- Windows Event Log parser
 - Alert enrichment
+- Multi-source IOC correlation
 - CLI interface
-- Report generation
+- Report generation improvements
 
 ---
 
@@ -201,7 +203,7 @@ Planned future enhancements include:
 - URL reputation lookup
 - Domain reputation lookup
 - File hash enrichment
-- CSV export
+- JSON report export
 - HTML reports
 - Interactive CLI menu
 - Unit testing

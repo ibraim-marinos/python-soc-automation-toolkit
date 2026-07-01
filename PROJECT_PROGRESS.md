@@ -34,8 +34,22 @@
 - [x] CSV report export
 
 
-#### Day 4
-- Windows Failed Login Parser
+### Day 4
+
+- [x] Completed
+- [x] Windows Failed Login Parser
+- [x] Read Event ID 4625 logs
+- [x] Extract username
+- [x] Extract source IP
+- [x] Extract failure reason
+- [x] Extract computer name
+- [x] Extract timestamp
+- [x] Generate failed login reports
+- [x] Generate summary report
+- [x] Count failed login attempts
+- [x] Detect possible Brute Force attacks
+- [x] MITRE ATT&CK T1110 mapping
+- [x] TXT report export
 
 #### Day 5
 - Brute Force Detection Logic
